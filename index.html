@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Saurabh Kumar, PhD · Retinal Biology</title>
-<meta name="description" content="Saurabh Kumar, PhD — Postdoctoral Research Associate, Department of Ophthalmology, University of Rochester Medical Center. Retinal lipid metabolism, hPSC-RPE and mouse models of age-related macular degeneration, retinopathy of prematurity.">
+<meta name="description" content="Saurabh Kumar, PhD — Postdoctoral Research Associate, Department of Ophthalmology, University of Rochester Medical Center. iPSC and mouse models of CLN3 (Batten) disease and age-related macular degeneration; retinal lipid metabolism.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -62,6 +62,8 @@
   .tl .w b{display:block}
   .tl .w span{color:var(--muted)}
 
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips span{font-size:14px;padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
   .code{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:18px}
   footer{padding:36px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 
@@ -98,8 +100,6 @@
     <div class="links">
       <a class="btn" href="https://scholar.google.com/citations?user=GHAm2QcAAAAJ&amp;hl=en">Google Scholar</a>
       <a class="btn" href="https://github.com/eyesaurabh">GitHub</a>
-      <a class="btn" href="https://orcid.org/<ORCID>">ORCID</a>
-      <a class="btn" href="https://www.linkedin.com/in/<handle>">LinkedIn</a>
       <a class="btn" href="#contact">Email</a>
     </div>
   </div>
@@ -107,14 +107,18 @@
 
 <section id="research">
   <h2>Research</h2>
-  <p>My long-term goal is to understand retinal physiology well enough to design rational therapies for retinal disease. During my PhD at the L V Prasad Eye Institute, I used multi-omics approaches centered on lipid metabolism to show how arachidonic acid and prostaglandin pathways drive retinal neovascularization and neurodegeneration in retinopathy of prematurity. That work also led me to co-develop non-invasive, tear-based biosensors for early detection of eye disease.</p>
-  <p>Since November 2025 I have been a postdoctoral researcher in Dr. Ruchira Singh's laboratory at the University of Rochester, where I study the RPE in age-related macular degeneration (AMD). Current AMD treatments act on late-stage disease and rarely restore vision, so I focus on early disease. Using patient-derived human pluripotent stem cell (hPSC) models together with mouse models that reproduce hallmark pathology such as drusen formation, I am dissecting how lipid mediators like PLA2G2A and lysosomal dysfunction trigger early RPE dysfunction, with the aim of finding targets that preserve vision.</p>
+  <p>I develop disease models of retinal degenerative disorders using induced pluripotent stem cell (iPSC) technology and mouse models, and use them to understand disease mechanisms and identify therapeutic targets. My work in Dr. Ruchira Singh's laboratory focuses on two diseases: CLN3 disease (juvenile Batten disease), a lysosomal storage disorder, and age-related macular degeneration (AMD).</p>
+  <p><b>CLN3 disease.</b> The CLN3 protein sits in several cellular compartments, including lysosomes, which digest and recycle cellular molecules, yet its primary function is still unclear. I study how CLN3 mutation leads to mis-trafficking of lysosomal enzymes and altered lysosomal pH.</p>
+  <p><b>Age-related macular degeneration.</b> AMD affects the photoreceptor–RPE–choriocapillaris complex and is a major cause of vision loss. Current treatments slow progression but rarely improve vision, carry a risk of conversion to wet AMD, and impose a heavy treatment burden. I have contributed to establishing iPSC-derived RPE (iRPE) models of AMD and related macular dystrophies that reproduce drusen formation, a key hallmark of the disease, and I am using them to dissect how lipid mediators such as PLA2G2A and lysosomal dysfunction trigger early RPE dysfunction.</p>
+  <p><b>Retinal lipid metabolism.</b> During my PhD at the L V Prasad Eye Institute, I used multi-omics approaches focused on lipid metabolism to identify the role of arachidonic acid and prostaglandin metabolism in retinal neovascularization and neurodegeneration in retinopathy of prematurity. This work also led me to co-develop non-invasive, tear-based biosensors for early detection of eye disease.</p>
   <div class="themes">
-    <div class="card"><b>Early AMD mechanisms</b><span>Lipid mediators (PLA2G2A), lysosomal dysfunction and drusen formation in the RPE.</span></div>
-    <div class="card"><b>hPSC &amp; in vivo models</b><span>Patient-derived hPSC-RPE alongside mouse models of AMD for target discovery.</span></div>
+    <div class="card"><b>CLN3 / Batten disease</b><span>Lysosomal enzyme trafficking, lysosomal pH and exocytosis in CLN3-deficient iPSC-RPE.</span></div>
+    <div class="card"><b>Early AMD mechanisms</b><span>Drusen-forming iRPE and mouse models; PLA2G2A and lysosomal dysfunction in early RPE dysfunction.</span></div>
     <div class="card"><b>Retinal lipid metabolism</b><span>Arachidonic acid and prostaglandin signaling in retinopathy of prematurity.</span></div>
-    <div class="card"><b>Ocular biomarkers &amp; omics</b><span>Multi-omics of vitreous, plasma and tear; tear-based biosensors for early diagnosis.</span></div>
+    <div class="card"><b>Ocular biomarkers &amp; omics</b><span>Multi-omics and LC-MS lipidomics; tear-based biosensors for early diagnosis.</span></div>
   </div>
+  <h3>Expertise</h3>
+  <p class="chips"><span>LC-MS</span><span>iPSC-RPE models</span><span>Mouse models</span><span>Flow cytometry</span><span>Protein &amp; RNA biology</span><span>Gene editing</span><span>Spatial biology</span><span>Electrophysiology</span><span>Multi-omics</span><span>Reproducible analysis in R</span></p>
 </section>
 
 <section id="publications">
@@ -123,20 +127,16 @@
 
   <h3>Research articles</h3>
   <ol class="pubs">
+    <li>Dubey AR, <span class="me">Kumar S</span>, Singh R. <span class="t">Lysosomal alkalinization: a convergent mechanism in lysosomal storage disorders and classical neurodegenerative diseases.</span> <span class="venue">Cell Communication and Signaling</span> (2026). <a href="https://doi.org/10.1186/s12964-026-03118-1">doi:10.1186/s12964-026-03118-1</a></li>
     <li>Ghosh TN*, <span class="me">Kumar S</span>*, Jalali S, et al. <span class="t">Development of a disposable chemiresistive biochip for tear-based retinopathy of prematurity diagnosis: early screening and risk prediction.</span> <span class="venue">IEEE Sensors Journal</span> 26(4):5327–5335 (2026). <a href="https://doi.org/10.1109/JSEN.2025.3645254">doi:10.1109/JSEN.2025.3645254</a> <span class="tag">Joint first author</span></li>
     <li>Saha D, <span class="me">Kumar S</span>, Gupta RK, et al. <span class="t">Role of calcium in the regulation of chronic stress-induced progression of stress granule assembly in N2a cells.</span> <span class="venue">ACS Chemical Neuroscience</span> 16(20):4111–4132 (2025).<!-- add DOI link when available --></li>
     <li><span class="me">Kumar S</span>, Patnaik S, Joshi MB, Sharma N, Kaur T, Jalali S, Kekunnaya R, Mahajan A, Chakrabarti S, Kaur I. <span class="t">Arachidonic acid metabolism regulates the development of retinopathy of prematurity among preterm infants.</span> <span class="venue">Journal of Neurochemistry</span> 168(9):3171–3187 (2024). <a href="https://doi.org/10.1111/jnc.16190">doi:10.1111/jnc.16190</a> <span class="tag">First author</span></li>
-    <li>Dhyani V, <span class="me">Kumar S</span>, Manne SR, et al. <span class="t">Three-dimensional tracking of intracellular calcium and redox state during real-time control in a hypoxic gradient in microglia culture.</span> <span class="venue">ACS Chemical Neuroscience</span> 14(10):1810–1825 (2023). <a href="https://doi.org/10.1021/acschemneuro.2c00807">doi:10.1021/acschemneuro.2c00807</a></li>
+    <li>Dhyani V, <span class="me">Kumar S</span>, Manne SR, et al. <span class="t">Three-dimensional tracking of intracellular calcium and redox state during real-time control in a hypoxic gradient in microglia culture: comparison of the channel blocker and reoxygenation under ischemic shock.</span> <span class="venue">ACS Chemical Neuroscience</span> 14(10):1810–1825 (2023). <a href="https://doi.org/10.1021/acschemneuro.2c00807">doi:10.1021/acschemneuro.2c00807</a></li>
     <li>Ghosh TN, Rotake D, <span class="me">Kumar S</span>, et al. <span class="t">Tear-based MMP-9 detection: a rapid antigen test for ocular inflammatory disorders using a vanadium disulfide nanowire-assisted chemiresistive biosensor.</span> <span class="venue">Analytica Chimica Acta</span> 1263 (2023). <a href="https://doi.org/10.1016/j.aca.2023.341281">doi:10.1016/j.aca.2023.341281</a></li>
   </ol>
 
-  <h3>In press</h3>
-  <ol class="pubs">
-    <li>Dubey AR, <span class="me">Kumar S</span>, Singh R. <span class="t">Lysosomal alkalinization: a convergent mechanism in lysosomal storage disorders and classical neurodegenerative diseases.</span> <span class="venue">Cell Signalling and Communication</span> <span class="tag">In press</span></li>
-    <li>Sharma N, Goel P, <span class="me">Kumar S</span>, Belenje A, et al. <span class="t">Mechanistic insights into retinopathy of prematurity pathogenesis via protein profiling of vitreous-derived extracellular vesicles.</span> <span class="venue">Journal of Proteome Research</span> <span class="tag">In press</span></li>
-  </ol>
 
-  <h3>Book chapters, reviews &amp; perspectives</h3>
+  <h3>Book chapters &amp; perspectives</h3>
   <ol class="pubs">
     <li><span class="me">Kumar S</span>, Joshi MB, Kaur I. <span class="t">Protocols and methods applicable to retinal vascular diseases.</span> <span class="venue">Methods in Molecular Biology</span> 2625:71–78 (2023). <a href="https://doi.org/10.1007/978-1-0716-2966-6_6">doi:10.1007/978-1-0716-2966-6_6</a></li>
     <li>Kaur T, Patnaik S, <span class="me">Kumar S</span>, Kaur I. <span class="t">Molecular mechanisms in the pathogenesis of retinopathy of prematurity (ROP).</span> In: Nema HV, Nema N (eds), <span class="venue">Genetics of Ocular Diseases</span>. Springer, Singapore (2022). <a href="https://doi.org/10.1007/978-981-16-4247-0_9">doi:10.1007/978-981-16-4247-0_9</a></li>
@@ -147,7 +147,7 @@
   <h2>Code &amp; data</h2>
   <div class="code">
     <p>Analysis code for my papers is published on <a href="https://github.com/eyesaurabh">GitHub</a> and archived with a DOI on Zenodo, so every reported result can be reproduced.</p>
-    <p style="margin:0"><!-- Add one line per repository --><a href="https://github.com/eyesaurabh/<repo-name>"><b>&lt;repo-name&gt;</b></a> — R pipeline for &lt;paper short title&gt; (&lt;Journal, Year&gt;)</p>
+    <p style="margin:0"><!-- Add one line per repository, e.g. <a href="https://github.com/eyesaurabh/REPO">REPO</a> — R pipeline for PAPER (Journal, Year) --><i>Repositories coming soon.</i></p>
   </div>
 </section>
 
@@ -178,12 +178,12 @@
     <div class="y">2023–2025</div><div class="w"><b>Senior Research Fellow</b><span>Department of Biotechnology, Government of India</span></div>
     <div class="y">2020–2023</div><div class="w"><b>Junior Research Fellow</b><span>Department of Biotechnology, Government of India</span></div>
   </div>
-  <h3>Education</h3>
+  <h3>Education &amp; training</h3>
   <div class="tl">
     <div class="y">2025–present</div><div class="w"><b>Postdoctoral training, Stem Cell Research</b><span>University of Rochester Medical Center, Rochester, NY, USA</span></div>
-    <div class="y">2025</div><div class="w"><b>PhD, Retinal Metabolism</b><span>L V Prasad Eye Institute, Hyderabad, India</span></div>
-    <div class="y">2019</div><div class="w"><b>MS, Molecular Microbiology</b><span>University of Hyderabad, Hyderabad, India</span></div>
-    <div class="y">2016</div><div class="w"><b>BS, Life Sciences</b><span>L. N. Mithila University, Bihar, India</span></div>
+    <div class="y">2020–2025</div><div class="w"><b>PhD, Retinal Metabolism</b><span>L V Prasad Eye Institute, Hyderabad, India</span></div>
+    <div class="y">2017–2019</div><div class="w"><b>MS, Molecular Microbiology</b><span>University of Hyderabad, Hyderabad, India</span></div>
+    <div class="y">2013–2016</div><div class="w"><b>BS, Life Sciences</b><span>L. N. Mithila University, Bihar, India</span></div>
   </div>
 </section>
 
@@ -191,7 +191,7 @@
   <h2>Contact</h2>
   <p>Department of Ophthalmology, Flaum Eye Institute<br>
   University of Rochester Medical Center, Rochester, NY, USA<br>
-  Email: <a href="mailto:<your.email>@urmc.rochester.edu">&lt;your.email&gt;@urmc.rochester.edu</a></p>
+  Email: <a href="mailto:Saurabh_Kumar@urmc.rochester.edu">Saurabh_Kumar@urmc.rochester.edu</a></p>
 </section>
 
 </main>
